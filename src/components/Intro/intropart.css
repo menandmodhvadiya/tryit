@@ -1,0 +1,72 @@
+#intro{
+    height: calc(100vh-4rem);
+    width: 100vw;
+    max-width: 75rem;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+.bgImage{
+    position: absolute;
+    margin-top: 10rem;
+    top: -4rem;
+    right: 0;
+    z-index: -1;
+    object-fit: cover;
+    height: 50vh;
+    margin-top: 12rem;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    
+    
+}
+@media screen and (max-width:840px) {
+    .bgImage{
+        right: -10vw;
+    }
+    .introContent{
+        font-size: 10vw;
+    }
+    .hello{
+        font-size: 4.5vw;
+    }
+}
+@media screen and (max-width:440px) {
+    .bgImage{
+        right: -20vw;
+    }
+}
+.introContent{
+    height: 100vh;
+    width: 100vw;
+    padding: 2rem;
+    font-size: 3rem;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 0;
+}
+.hello{
+    font-size: 1.75rem;
+    font-weight: 100;
+}
+.introName{
+    color: yellow;
+}
+.intropara{
+    font-size: medium;
+    font-weight: 200;
+}
+.btn{
+    background-color: white;
+    margin: 1rem 0;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 2rem;
+}
+.btnImge{
+    object-fit: cover;
+    margin: 0 0.25rem;
+    height: 1rem;
+}
